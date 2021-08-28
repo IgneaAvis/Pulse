@@ -1,0 +1,59 @@
+.slider{
+    padding: 81px 0;
+    &__inner{
+        width: 750px;
+        position: relative;
+        // В адаптивности изменить на 80%
+        margin: 0 auto;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .slick-prev, .slick-next{
+        background:#fff; 
+        outline:none; 
+        border:none;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -66px;
+        img{
+            width:31px;
+            height:50px;
+        }
+    }
+    .slick-next{
+        left: auto;
+        right: -66px;
+    }
+    .slick-dots{
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        li{
+            button{
+            width: 10px;
+            height: 10px;
+            font-size: 0;
+            border-radius: 100%;
+            border: none;
+            background-color: grey;
+            outline: none;
+            margin-left: 10px;
+        }
+        li:nth-child(1){
+            button{
+                margin-left: 0;
+            }
+        }
+        
+    }
+    .slick-active{
+        button{
+            background-color: black;
+        }
+    }
+    }
+}

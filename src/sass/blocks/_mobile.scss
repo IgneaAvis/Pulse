@@ -1,0 +1,279 @@
+@media (max-width: 992px){
+    .slider{
+        &__inner{
+            width: 80%;
+        }
+    }
+}
+@media (max-width: 768px){
+    .promo{
+        padding: 21px 15px 93px 15px;
+        &__header{
+            font-size: 36px;
+        }
+        &__subheader{
+            font-size: 21px;
+        }
+        &__icons{
+            width: 400px;
+        }
+    }
+    .header{
+        &__logo{
+           width: 200px;
+        }
+    }
+    .button_main{
+        width: 270px;
+    }
+    .advantages{
+        &__items{
+            flex-direction: column;
+            width: 100%;
+        }
+        &__item{
+            margin-top: 30px;
+        }
+        &__title{
+            margin-top: 10px;
+        }
+    }
+    .consalting{
+        text-align: center;
+        &__title{
+            font-size: 30px;
+        }
+        &__subtitle{
+            margin-top: 28px;
+        }
+    }
+    .form{
+        align-items: center;
+    }
+    .reviews{
+        padding: 40px 30px 70px 30px;
+    }
+    .footer{
+        &__info{
+            position: relative;
+            width: 100%;
+        }
+        &__map{
+            height: 440px;
+        }
+    }
+}
+@media (max-width: 425px){
+    .header{
+        &__official{
+            display: none;
+        }
+        &__contacts{
+            display: none;
+        }
+        &__logo{
+            margin: 0 auto;
+            width: 250px;
+        }
+    }
+    .promo{
+        &__wrapper{
+            text-align: center;
+            align-items: center;
+        }
+        &__icons{
+            width: 360px;
+        }
+        &__header{
+            font-size: 30px;
+        }
+        &__subheader{
+            margin-top: 10px;
+            font-size: 18px;
+        }
+    }
+    .button_main{
+        margin-top: 80px;
+    }
+    .advantages{
+        &__header{
+            font-size: 25px;
+        }
+    }
+    .consalting{
+        &__title{
+            font-size: 22px;
+        }
+        &__subtitle{
+            margin-top: 28px;
+            font-size: 17px;
+        }
+    }
+    .reviews{
+        &__item{
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            &__body{
+                margin-left: 0;
+                margin-top: 30px;
+            }
+        }
+        &__title{
+            font-size: 24px;
+        }
+    }
+    .catalog{
+        &__tabs{
+            width: 96%;
+            margin: 70px auto;
+        }
+        &__tab{
+            transform: skewX(0deg);
+            div{
+                transform: skewX(0deg);
+                font-size: 12px;
+            }
+        }
+    }
+    .footer{
+        &__info{
+            position: relative;
+            width: 100%;
+            padding: 50px 0 50px 0;
+        }
+        &__address{
+            font-size: 22px;
+        }
+    }
+    .modal{
+        width: 330px;
+    }
+}
+@media (max-width: 375px){
+    .promo{
+        min-height: 450px;
+        &__icons{
+            display: none;
+        }
+    }
+    .footer{
+        height: 576px;
+        &__info{
+            position: relative;
+            width: 100%;
+        }
+        &__map{
+            height: 300px;
+        }
+        &__address{
+            font-size: 20px;
+        }
+        &__phone{
+            font-size: 20px;
+        }
+    }
+    .modal{
+        width: 290px;
+        padding: 30px 5px;
+        &__subtitle{
+            font-size: 16px;
+        }
+        &__deskr{
+            font-size: 12px;
+        }
+        .form{
+            input{
+                width: 250px;
+            }
+            .button{
+                &_consalting{
+                    width: 250px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 320px){
+    .promo{
+        &__header{
+            font-size: 22px;
+        }
+        &__subheader{
+            font-size: 14px;
+        }
+    }
+    .button_main{
+        width: 230px;
+        font-size: 14px;
+    }
+    .advantages{
+        &__header{
+            font-size: 21px;
+        }
+    }
+    .consalting{
+        min-height: 620px;
+        &__title{
+            font-size: 18px;
+        }
+        &__subtitle{
+            font-size: 14px;
+            margin-top: 28px;
+        }
+    }
+    .form{
+        input{
+            width: 280px;
+        }
+    }
+    .button{
+        &_consalting{
+            width: 280px;
+        }
+    }
+    .catalog{
+        &__tab{
+            div{
+                font-size: 10px;
+            }
+        }
+    }
+    .footer{
+        height: 576px;
+        &__info{
+            position: relative;
+            width: 100%;
+        }
+        &__map{
+            height: 300px;
+        }
+        &__address{
+            font-size: 15px;
+        }
+        &__phone{
+            font-size: 18px;
+        }
+    }
+    .modal{
+        width: 236px;
+        padding: 30px 5px;
+        &__subtitle{
+            font-size: 13px;
+        }
+        &__deskr{
+            font-size: 12px;
+        }
+        .form{
+            input{
+                width: 210px;
+            }
+            .button{
+                &_consalting{
+                    width: 210px;
+                }
+            }
+        }
+    }
+}

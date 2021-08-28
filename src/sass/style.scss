@@ -1,0 +1,21 @@
+@import 'base/variables';
+*{
+    font-family: 'Museo Sans Cyrl', sans-serif;
+}
+.container{
+    max-width: 950px;
+    margin: 0 auto; 
+}
+@import 'blocks/promo';
+@import 'blocks/header';
+@import 'blocks/buttons';
+@import 'blocks/advantages';
+@import 'blocks/consalting';
+@import 'blocks/forms';
+@import 'blocks/reviews';
+@import 'blocks/slider';
+@import 'blocks/catalog';
+@import 'blocks/footer';
+@import 'blocks/modals';
+
+@import 'blocks/mobile';

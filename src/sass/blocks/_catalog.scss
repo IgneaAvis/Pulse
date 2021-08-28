@@ -1,0 +1,171 @@
+.catalog{
+    padding-bottom: 40px;
+    &__title{
+        text-align: center;
+        font-size: 30px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #0d0d0d;
+    }
+    &__tabs{
+        padding: 0;
+        margin: 0;
+        margin-top: 70px;
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+    }
+    &__tab{
+        width: 220px;
+        height: 50px;
+        font-size: 18px;
+        border: 2px solid #d0d0d0;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: #6b6b6b;
+        text-align: center;
+        line-height: 48px;
+        transform: skewX(-25deg);
+        cursor: pointer;
+        margin: 0 5px;
+        transition: 0.5s;
+        &:hover{
+            box-shadow: 3px 3px 20px grey;
+            border: none;
+        }
+        div{
+            transform: skewX(+25deg);
+        }
+        &_active{
+            background-color: $main-color;
+            color: #fff;
+            border: 0;
+        }
+    }
+    &__content{
+        margin-top: 60px;
+        display: none;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        &_active{
+            display: flex;
+        }
+    }
+    &-item{
+        width: 300px;
+        min-height: 440px;
+        border: 2px solid #e8e8e8;
+        padding: 20px;
+        padding-bottom: 26px;
+        overflow: hidden;
+        margin-bottom: 20px;
+        &__img{
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            max-height: 200px;
+        }
+        &__subtitle{
+            font-size: 16px;
+            font-weight: 700;
+            color: #0d0d0d;
+            text-align: center;
+            margin-top: 20px;
+        }
+        &__descr{
+            font-size: 14px;
+            font-weight: 300;
+            color: #0d0d0d;
+            margin-top: 16px;
+            text-align: center;
+        }
+        &__link{
+            display: block;
+            margin-top: 17px;
+            font-size: 14px;
+            font-weight: 500;
+            text-decoration: underline;
+            color: $main-color;
+            text-align: center;
+            &:hover{
+                color: red;
+            }
+        }
+        &__footer{
+            margin-top: 21px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__old-price{
+            font-size: 14px;
+            font-weight: 300;
+            color: #555555;
+            text-decoration: line-through;
+        }
+        &__price{
+            font-size: 20px;
+            font-weight: 700;
+            color: #050505;
+        }
+        hr{
+            margin-top: 19px;
+            border: 1px solid #e8e8e8;
+        }
+        &__wrapper{
+            display: flex;
+            width: calc(200% + 40px);
+        }
+        &__front{
+            width: 50%;
+            margin-right: 0px;
+            transform: translateX(-100%);
+            transition: 1s all;
+            &_active{
+                transform: translateX(0%);
+                margin-right: 20px;
+            }
+        }
+        &__back{
+            width: 50%;
+            margin-left: 20px;
+            transform: translateX(0%);
+            padding-right: 20px;
+            transition: 1s all;
+            list-style-type: square;
+            color: $main-color;
+            padding-left: 10px;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 24px;
+            ul{
+                padding-left: 0;
+                margin-bottom: 0;
+            }
+            a{
+                font-size: 14px;
+                font-weight: 500;
+                text-decoration: underline;
+                color: #c70101;
+                display: block;
+                margin-top: 84px;
+                text-align: center;
+            }
+            &_active{
+                transform: translateX(-100%);
+                margin-left: 0;
+            }
+            &__item{
+                color: red;
+                padding-top: 10px;
+                &:nth-child(1){
+                    padding-top: 0;
+                }
+                span{
+                    color: #555555;
+                }
+            }
+        }
+    }
+}
