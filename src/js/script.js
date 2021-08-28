@@ -44,10 +44,10 @@ $(document).ready(function () {
         $(".overlay, #consultation, #order, #thanks").fadeOut("slow");
     });
 
-    $('[data-modal=add]').on("click", function () {
-        $("#consultation, #order").fadeOut();
-        $("#thanks").fadeIn("slow");
-    });
+    // $('[data-modal=add]').on("click", function () {
+    //     $("#consultation, #order").fadeOut();
+    //     $("#thanks").fadeIn("slow");
+    // });
 
     $('.button_mini').each(function (i) {
         $(this).on("click", function () {
@@ -55,4 +55,26 @@ $(document).ready(function () {
             $(".overlay, #order").fadeIn("slow");
         });
     });
+
+    //Validation
+
+    $("#cons").validate();
+    $("#consultation form").validate({
+        rules:{
+            name: "required",
+            email: {
+                required: true,
+                email: true
+            },
+            phone: "required",
+        },
+        messages: {
+            name: "Введите имя",
+            email: {
+              required: "Нам нужен ваш E-Mail, чтобы связаться с вами",
+              email: "Пример: name@domain.com"
+            }
+          }
+    });
+    $("#order form").validate();
 });
