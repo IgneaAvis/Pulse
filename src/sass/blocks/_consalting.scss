@@ -16,4 +16,12 @@
         font-weight: 400;
         color: #ffffff;
     }
+    .error{
+        border: 1px solid red;
+    }
+    label.error{
+        border:none;
+        color: #fff;
+        margin-top: 15px;
+    }
 }
